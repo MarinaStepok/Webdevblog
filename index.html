@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/40aaf9b675.js" crossorigin="anonymous"></script>
+
+    <title>WebDevBlog</title>
+</head>
+
+
+<body>
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">WebDevBlog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Our team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Our works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                    <form action="#" class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-8">
+                    <h1>Web Developer Blog</h1>
+                    <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+                </div>
+            </div>
+
+            <div class="row mt-5 justify-content-center">
+                <div class="col-6 col-md-4 col-xxl-2">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffc451"
+                            class="bi bi-file-image" viewBox="0 0 16 16">
+                            <path d="M8.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                            <path
+                                d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v8l-2.083-2.083a.5.5 0 0 0-.76.063L8 11 5.835 9.7a.5.5 0 0 0-.611.076L3 12V2z" />
+                        </svg>
+                        <h3><a href="#">Lorem, ipsum</a></h3>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-xxl-2">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffc451"
+                            class="bi bi-caret-right-square-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z" />
+                        </svg>
+                        <h3><a href="#">Lorem, ipsum</a></h3>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-xxl-2">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffc451"
+                            class="bi bi-file-image" viewBox="0 0 16 16">
+                            <path d="M8.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                            <path
+                                d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v8l-2.083-2.083a.5.5 0 0 0-.76.063L8 11 5.835 9.7a.5.5 0 0 0-.611.076L3 12V2z" />
+                        </svg>
+                        <h3><a href="#">Lorem, ipsum</a></h3>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-xxl-2">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffc451"
+                            class="bi bi-caret-right-square-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.5 10a.5.5 0 0 0 .832.374l4.5-4a.5.5 0 0 0 0-.748l-4.5-4A.5.5 0 0 0 5.5 4v8z" />
+                        </svg>
+                        <h3><a href="#">Lorem, ipsum</a></h3>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-xxl-2">
+                    <div class="icon-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffc451"
+                            class="bi bi-file-image" viewBox="0 0 16 16">
+                            <path d="M8.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                            <path
+                                d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v8l-2.083-2.083a.5.5 0 0 0-.76.063L8 11 5.835 9.7a.5.5 0 0 0-.611.076L3 12V2z" />
+                        </svg>
+                        <h3><a href="#">Lorem, ipsum</a></h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> <!-- end hero -->
+
+
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row my-5">
+
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <img class="img-fluid"
+                        src="https://images.unsplash.com/photo-1625617159633-832f79947ed3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1336&q=80"
+                        alt="">
+                </div>
+
+                <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1">
+                    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, non!</h3>
+                    <p class="font-italic">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel neque voluptate reprehenderit
+                        repudiandae.
+                    </p>
+                    <ul>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffc451"
+                                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                            </svg>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, impedit. Lorem ipsum
+                            dolor sit amet consectetur adipisicing.
+                        </li>
+
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffc451"
+                                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                            </svg>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, impedit. Lorem ipsum
+                            dolor sit amet consectetur adipisicing.
+                        </li>
+
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffc451"
+                                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                            </svg>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, impedit. Lorem,
+                            ipsum dolor.
+                        </li>
+
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ffc451"
+                                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                            </svg>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, impedit. Lorem ipsum
+                            dolor sit amet.
+                        </li>
+                    </ul>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed illo eveniet ratione at iusto,
+                        distinctio maiores.
+                        Velit incidunt vel voluptatibus doloremque illum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> <!-- end about -->
+
+
+
+    <section class="my_carousel">
+        <!-- <h3 class="mb-5 text-center">Our Clients</h3> -->
+        <div class="carousel slide" id="blogCarousel" data-bs-ride="carousel">
+
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+
+
+            <div class="container carousel-inner text-center">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 mb-sm-2">
+                            <a href="#">
+                                <img src="img/1.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 mb-sm-2">
+                            <a href="#">
+                                <img src="img/3.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 mb-sm-2">
+                            <a href="#">
+                                <img src="img/2.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 mb-sm-2">
+                            <a href="#">
+                                <img src="img/4.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 mb-sm-2">
+                            <a href="#">
+                                <img src="img/1.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 mb-sm-2">
+                            <a href="#">
+                                <img src="img/3.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 mb-sm-2">
+                            <a href="#">
+                                <img src="img/2.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 mb-sm-2">
+                            <a href="#">
+                                <img src="img/4.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>    <!-- Carousel end -->
+         
+
+        </div>
+    </section> <!-- end my_carousel -->
+
+
+
+    <section class="services">
+        <div class="container text-center">
+
+            <div class="section_title">
+                <h3>Services</h3>
+                <p>Check our services</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box">
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-calendar2-check" viewBox="0 0 16 16">
+                            <path d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
+                            <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"/>
+                          </svg>
+                      </div>
+                      <h4>Lorem, ipsum dolor</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis sunt aperiam harum vero enim at.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box">
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
+                            <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                          </svg>
+                      </div>
+                      <h4>Lorem, ipsum dolor</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis sunt aperiam harum vero enim at.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box">
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-calendar2-check" viewBox="0 0 16 16">
+                            <path d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
+                            <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"/>
+                          </svg>
+                      </div>
+                      <h4>Lorem, ipsum dolor</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis sunt aperiam harum vero enim at.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box">
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
+                            <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                          </svg>
+                      </div>
+                      <h4>Lorem, ipsum dolor</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis sunt aperiam harum vero enim at.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box">
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-calendar2-check" viewBox="0 0 16 16">
+                            <path d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
+                            <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"/>
+                          </svg>
+                      </div>
+                      <h4>Lorem, ipsum dolor</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis sunt aperiam harum vero enim at.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box">
+                      <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
+                            <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2zM2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                          </svg>
+                      </div>
+                      <h4>Lorem, ipsum dolor</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis sunt aperiam harum vero enim at.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- end services -->
+
+
+
+    <section class="cta">
+        <div class="container text-center">
+            <h3>Call to action</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit facere ratione deserunt,
+                fugit repudiandae ut eveniet.</p>
+            <a href="#" class="cta-button">Call to action</a>
+        </div>
+    </section> <!-- end cta -->
+
+
+
+    <section class="works">
+        <div class="container text-center">
+
+            <div class="section-title">
+                <h3>Our works</h3>
+                <p>Check our works</p>
+            </div>
+
+            <div class="button-works">
+                <p>
+                    <a href="#multiCollapse1" data-bs-toggle="collapse" aria-controls="multiCollapse1" role="button"
+                        aria-expanded="false" class="btn btn-secondary">First</a>
+
+                    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#multiCollapse2" aria-controls="multiCollapse2"
+                        aria-expanded="false">Seconde</button>
+
+                    <button class="btn btn-secondary" type="button" data-bs-toggle="collapse"
+                        data-bs-target=".multi-collapse" aria-controls="multiCollapse1 multiCollapse2"
+                        aria-expanded="false">All</button>
+                </p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="collapse multi-collapse show" id="multiCollapse2">
+                        <div class="card card-body">
+                            <img class="w-100"
+                                src="https://images.unsplash.com/photo-1620912189865-1e8a33da4c5e?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDY2fGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="collapse multi-collapse show" id="multiCollapse1">
+                        <div class="card card-body">
+                            <img class="w-100"
+                                src="https://images.unsplash.com/photo-1624027101484-f42633c052c7?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDk0fGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="collapse multi-collapse show" id="multiCollapse2">
+                        <div class="card card-body">
+                            <img class="w-100"
+                                src="https://images.unsplash.com/photo-1598946114829-162ee19ac506?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE5fGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="collapse multi-collapse show" id="multiCollapse1">
+                        <div class="card card-body">
+                            <img class="w-100"
+                                src="https://images.unsplash.com/photo-1615458317538-72c46d9359d8?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDcyfGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="collapse multi-collapse show" id="multiCollapse2">
+                        <div class="card card-body">
+                            <img class="w-100"
+                                src="https://images.unsplash.com/photo-1625123627242-97ef1000c6d1?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDgxfGFldTZyTC1qNmV3fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="collapse multi-collapse show" id="multiCollapse1">
+                        <div class="card card-body">
+                            <img class="w-100"
+                                src="https://images.unsplash.com/photo-1529653762956-b0a27278529c?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExMnxhZXU2ckwtajZld3x8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section> <!-- end works -->
+
+
+
+    <section id="team" class="team">
+        <div class="container text-center mt-5">
+
+            <div class="section-title">
+                <h3>Our team</h3>
+                <p>Check our team</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member">
+                        <div class="member-img">
+
+                            <img class="img-fluid"
+                            src="https://images.unsplash.com/photo-1594745561149-2211ca8c5d98?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE3fHxwZXJzb258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"alt="">
+                            
+                            <div class="social">
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="member-info">
+                            <h4>Olivia</h4>
+                            <span>Designer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member">
+                        <div class="member-img">
+
+                            <img class="img-fluid"
+                            src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"alt="">
+
+                            <div class="social">
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="member-info">
+                            <h4>Anna</h4>
+                            <span>Designer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member">
+                        <div class="member-img">
+
+                            <img class="img-fluid"
+                            src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fHBlcnNvbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"alt="">
+                            
+                            <div class="social">
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="member-info">
+                            <h4>Alex</h4>
+                            <span>Developper</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="member">
+                        <div class="member-img">
+
+                            <img class="img-fluid"
+                            src="https://images.unsplash.com/photo-1512484776495-a09d92e87c3b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE0fHxtZW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"alt="">
+                       
+                            <div class="social">
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="member-info">
+                            <h4>James</h4>
+                            <span>Developper</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> <!-- end team -->
+
+
+
+    <section class="blog">
+        <div class="container text-center">
+
+            <div class="section-title">
+                <h3>Blog</h3>
+                <p>Read our blog</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="item mb-3">
+                        <div class="item-content">
+    
+                            <img class="img-fluid"
+                            src="https://images.unsplash.com/photo-1616587894998-eb4d3007bbb9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1508&q=80"
+                            alt="">
+    
+                            <div class="item__text text-start p-2">
+                                <a href="#">
+                                    <div class="item__subtitle">
+                                        <h4>Web dev blog</h4>
+                                    </div>
+                                    <div class="item__title">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md-4 col-sm-6">
+                    <div class="item mb-3">
+                        <div class="item-content">
+    
+                            <img class="img-fluid"
+                            src="https://images.unsplash.com/photo-1543269664-02e941c052f7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
+                            alt="">
+    
+                            <div class="item__text text-start p-2">
+                                <a href="#">
+                                    <div class="item__subtitle">
+                                        <h4>Web dev blog</h4>
+                                    </div>
+                                    <div class="item__title">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="item mb-3">
+                        <div class="item-content">
+    
+                            <img class="img-fluid"
+                            src="https://images.unsplash.com/photo-1616587894998-eb4d3007bbb9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1508&q=80"
+                            alt="">
+    
+                            <div class="item__text text-start p-2">
+                                <a href="#">
+                                    <div class="item__subtitle">
+                                        <h4>Web dev blog</h4>
+                                    </div>
+                                    <div class="item__title">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex justify-content-end">
+                    <button class="btn btn-primary">Read more</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section> <!-- end blog -->
+
+
+    
+    <section class="contact">
+        <div class="container">
+
+            <div class="section-title">
+                <h3 class="text-center">Contacts</h3>
+                <p class="text-center">Contact us</p>
+            </div>
+
+            
+            <div style="width: 100%">
+                <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Nice,%2013%20avenue%20Jean%20Medecin+(Web%20developper%20blog)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+            
+
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <div class="info">
+                        
+                        <div class="adress">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+                                    <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+                                </svg>
+                            </div>
+
+                            <h4>Location</h4>
+                            <p>13 Avenue Jean Médecin, 06000 Nice</p>
+                        </div>
+
+                        <div class="email">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                                </svg>
+                            </div>
+
+                            <h4>Email</h4>
+                            <p>lorem@email.com</p>
+                        </div>
+
+                        <div class="call">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-inbound" viewBox="0 0 16 16">
+                                    <path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0zm-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                </svg>
+                            </div>
+
+                            <h4>Call</h4>
+                            <p>09 72 77 33 45</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" placeholder="First name" class="form-control mb-3" required>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Name" class="form-control mb-3" required>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="email" placeholder="Email" class="form-control mb-3" required>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <input type="number" placeholder="Tel" class="form-control mb-3" required>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <textarea placeholder="Message" class="form-control mb-3" id="yourText" cols="30" rows="7"></textarea> 
+                            </div>
+
+                            <div class="col-12 d-flex justify-content-end">
+                                <button class="btn btn-primary">Send message</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> <!-- end contact -->
+
+
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+
+                    <div class="col-lg-3 col-md-6 mb-5">
+                        <div class="footer-info">
+                            <h3>Web Dev Blog</h3>
+                            <p>13 Avenue Jean Médecin, <br>
+                                06000 Nice <br>
+                                <strong>Phone:</strong> 09 72 77 33 45 <br>
+                                <strong>Email:</strong> lorem@email.com <br>
+                            </p>
+                        </div>
+                
+                        <div class="social-links">
+                            <a href="#" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>  
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 footer-links mb-5">
+                        <h4>Useful links</h4>
+                        <ul>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                                <a href="#">Home</a>
+                            </li>
+
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                                <a href="#">About us</a>
+                            </li>
+
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                                <a href="#">Our team</a>
+                            </li>
+
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                                <a href="#">Services</a>
+                            </li>
+
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                                <a href="#">Our works</a>
+                            </li>
+                            
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                                <a href="#">Blog</a>
+                            </li>
+
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                </svg>
+                                <a href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 footer-newletter mb-5">
+                        <h4>Our news</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, rem veniam.</p>
+                        <form class="form-newletter" action="#">
+                            <input class="email-newletter" type="email">
+                            <input class="subscribe" type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
